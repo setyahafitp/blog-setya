@@ -1,6 +1,6 @@
 ---
 title: "Belajar Basic Network Scanning dengan Nmap"
-date: 2025-12-10
+date: 2025-12-09
 author: "Setya Hafit"
 tags: ["Networking", "Kali Linux", "Tutorial"]
 draft: false
