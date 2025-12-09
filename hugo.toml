@@ -18,7 +18,7 @@ theme = 'PaperMod'
     name = "Jurnal"
     url = "/posts/"
     weight = 20
-    
+
 # --- Konfigurasi Profil Halaman Depan ---
 [params.profileMode]
     enabled = true
@@ -34,4 +34,4 @@ theme = 'PaperMod'
         url = "https://github.com/setyahafitp"
     [[params.socialIcons]]
         name = "linkedin"
-        url = "https://linkedin.com/in/username-anda"
+        url = "https://www.linkedin.com/in/setya-hafit-pambudi-0b6327237/"
