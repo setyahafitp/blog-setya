@@ -6,7 +6,23 @@
     <description>Recent content on Setya Hafit | Cybersecurity</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>id-id</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Me</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;Halo! Nama saya &lt;strong&gt;Setya Hafit&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Saya adalah seorang praktisi keamanan siber yang berfokus pada &lt;strong&gt;Network Security&lt;/strong&gt; dan &lt;strong&gt;DevSecOps&lt;/strong&gt;.
+Blog ini mendokumentasikan perjalanan belajar saya, jurnal harian saya, dan eksplorasi teknologi terbaru.&lt;/p&gt;
+&lt;h3 id=&#34;sertifikasi--keahlian&#34;&gt;Sertifikasi &amp;amp; Keahlian&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; Linux (Ubuntu, Kali), Windows Server&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tools:&lt;/strong&gt; Nmap, Wireshark, Burp Suite&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Programming:&lt;/strong&gt; Python, Bash, Go&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tertarik berdiskusi? Hubungi saya via &lt;a href=&#34;https://linkedin.com/setya-hafit-pambudi&#34;&gt;LinkedIn&lt;/a&gt; atau &lt;a href=&#34;https://github.com/setyahafitp&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

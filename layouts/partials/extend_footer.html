@@ -1,0 +1,62 @@
+<div id="tsparticles" style="position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: -1;"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+
+<script>
+    (async () => {
+        await tsParticles.load("tsparticles", {
+            background: {
+                color: "#1d1e20", // Warna background disamakan dengan PaperMod Dark
+            },
+            fpsLimit: 60,
+            particles: {
+                color: { value: "#00ff00" }, // Warna Titik (Hijau Hacker)
+                links: {
+                    color: "#00ff00",       // Warna Garis Penghubung
+                    distance: 150,
+                    enable: true,
+                    opacity: 0.2,
+                    width: 1,
+                },
+                move: {
+                    enable: true,
+                    speed: 1.5,             // Kecepatan gerak
+                    direction: "none",
+                    random: false,
+                    straight: false,
+                    outModes: "out",
+                },
+                number: {
+                    density: { enable: true, area: 800 },
+                    value: 80,              // Jumlah partikel
+                },
+                opacity: { value: 0.5 },
+                shape: { type: "circle" },
+                size: { value: { min: 1, max: 3 } },
+            },
+            interactivity: {
+                events: {
+                    onHover: {
+                        enable: true,
+                        mode: "grab" // Lanjutan: Garis akan menempel ke mouse saat di-hover
+                    },
+                    onClick: {
+                        enable: true,
+                        mode: "push" // Efek klik: Menambahkan partikel baru
+                    },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 140,
+                        links: { opacity: 1 }
+                    },
+                    push: {
+                        quantity: 4
+                    }
+                }
+            },
+            detectRetina: true
+        });
+    })();
+</script>
