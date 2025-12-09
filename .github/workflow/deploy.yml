@@ -1,0 +1,36 @@
+name: Deploy to Hostinger
+
+on:
+  push:
+    branches:
+      - main  # Trigger otomatis setiap ada update di branch main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          submodules: true  # Wajib true karena kita pakai theme PaperMod
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build Website
+        run: hugo --minify
+
+      - name: Deploy to Hostinger via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./public/    # Folder hasil build Hugo
+          server-dir: ./          # Upload langsung ke root FTP (karena akun FTP sudah diarahkan ke public_html)
+          protocol: ftps          # Enkripsi agar aman
+          strict: false           # Mencegah error sertifikat SSL di shared hosting
