@@ -18,3 +18,20 @@ theme = 'PaperMod'
     name = "Jurnal"
     url = "/posts/"
     weight = 20
+    
+# --- Konfigurasi Profil Halaman Depan ---
+[params.profileMode]
+    enabled = true
+    title = "Setya Hafit"
+    subtitle = "Cybersecurity Enthusiast | DevSecOps Learner"
+    imageUrl = "me.jpg"       # Ini otomatis mengambil dari folder static
+    imageWidth = 150
+    imageHeight = 150
+    
+    # Tombol Sosial Media (Bisa diedit nanti)
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/setyahafitp"
+    [[params.socialIcons]]
+        name = "linkedin"
+        url = "https://linkedin.com/in/username-anda"
