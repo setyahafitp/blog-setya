@@ -58,3 +58,11 @@ theme = 'PaperMod'
     name = "Tags"
     url = "/tags/"
     weight = 30
+
+    # --- Konfigurasi Favicon (Icon Tab Browser) ---
+[params.assets]
+    favicon = "me.jpg"
+    favicon16x16 = "me.jpg"
+    favicon32x32 = "me.jpg"
+    apple_touch_icon = "me.jpg"
+    safari_pinned_tab = "me.jpg"
