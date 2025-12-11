@@ -35,3 +35,26 @@ theme = 'PaperMod'
     [[params.socialIcons]]
         name = "linkedin"
         url = "https://www.linkedin.com/in/setya-hafit-pambudi-0b6327237/"
+
+# --- Pengaturan Output untuk Search ---
+[outputs]
+    home = ["HTML", "RSS", "JSON"] # JSON wajib ada untuk fitur Search
+
+# --- Konfigurasi Menu Navigasi ---
+[[menu.main]]
+    identifier = "archives"
+    name = "Archive"
+    url = "/archives/"
+    weight = 10
+
+[[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 20
+
+[[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 30

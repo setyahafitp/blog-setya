@@ -24,5 +24,16 @@ Blog ini mendokumentasikan perjalanan belajar saya, jurnal harian saya, dan eksp
 &lt;/ul&gt;
 &lt;p&gt;Tertarik berdiskusi? Hubungi saya via &lt;a href=&#34;https://linkedin.com/setya-hafit-pambudi&#34;&gt;LinkedIn&lt;/a&gt; atau &lt;a href=&#34;https://github.com/setyahafitp&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Belajar Basic Network Scanning dengan Nmap</title>
+      <link>http://localhost:1313/posts/belajar-nmap/</link>
+      <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/belajar-nmap/</guid>
+      <description>&lt;p&gt;Dalam cybersecurity, tahap pertama yang paling krusial adalah &lt;strong&gt;Reconnaissance&lt;/strong&gt; (Pengumpulan Informasi). Tools andalan saya adalah Nmap.&lt;/p&gt;
+&lt;h3 id=&#34;1-scanning-dasar&#34;&gt;1. Scanning Dasar&lt;/h3&gt;
+&lt;p&gt;Untuk melakukan scan cepat ke target, kita bisa gunakan perintah ini di terminal:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nmap -sC -sV 192.168.1.1
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
   </channel>
 </rss>
