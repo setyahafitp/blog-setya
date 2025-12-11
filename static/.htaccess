@@ -1,0 +1,33 @@
+<IfModule mod_headers.c>
+    # 1. HSTS (Strict-Transport-Security)
+    # Memaksa browser untuk selalu menggunakan HTTPS selama 1 tahun.
+    # Mencegah serangan Downgrade Attack / SSL Stripping.
+    Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+    # 2. X-Content-Type-Options
+    # Mencegah browser menebak-nebak tipe file (MIME Sniffing).
+    # File script harus dilayani dengan content-type yang benar.
+    Header set X-Content-Type-Options "nosniff"
+
+    # 3. X-Frame-Options
+    # Mencegah website Anda di-embed di dalam iframe website lain (Clickjacking).
+    # "SAMEORIGIN" artinya hanya boleh di-embed oleh domain Anda sendiri.
+    Header set X-Frame-Options "SAMEORIGIN"
+
+    # 4. X-XSS-Protection
+    # Mengaktifkan filter XSS bawaan browser (legacy tapi masih berguna).
+    Header set X-XSS-Protection "1; mode=block"
+
+    # 5. Referrer-Policy
+    # Mengontrol data apa yang dikirim saat pengunjung klik link keluar.
+    # Menjaga privasi user.
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # 6. Permissions-Policy
+    # Melarang penggunaan fitur sensitif browser (Kamera, Mic, Lokasi) di website ini.
+    Header set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=()"
+</IfModule>
+
+# 7. Disable Directory Browsing
+# Mencegah orang melihat daftar file di folder jika tidak ada index.html
+Options -Indexes
