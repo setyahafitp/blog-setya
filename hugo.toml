@@ -2,20 +2,27 @@ baseURL = 'https://setyahafit.space/'
 languageCode = 'id-id'
 title = 'Setya Hafit | Cybersecurity Consultant'
 theme = 'PaperMod'
-enableRobotsTXT = true  # Penting untuk SEO agar Google boleh meng-crawl website
+enableRobotsTXT = true  # Agar Google boleh meng-crawl website
 
 [params]
     # --- Tampilan & Warna ---
-    defaultTheme = "dark" # Default gelap (Hacker style)
-    # disableThemeToggle = true # Hapus tanda pagar jika ingin memaksa user selalu di dark mode
+    defaultTheme = "dark" 
+    
+    # --- Footer Profesional (White Labeling) ---
+    # Mematikan tulisan "Powered by Hugo" agar terlihat pro
+    showFooterPoweredBy = false
+    # Copyright custom ala konsultan
+    copyright = "© 2025 Setya Hafit | Securing the Digital Space"
 
-    # --- SEO Metadata (Agar muncul di Google) ---
+    # --- SEO Metadata ---
     author = "Setya Hafit"
     description = "Portfolio Setya Hafit: Cybersecurity Analyst, DevSecOps, dan Network Security Specialist."
     keywords = ["Setya Hafit", "Cybersecurity Indonesia", "Jasa Pentest", "DevSecOps", "Writeups", "CTF"]
     
-    # Masukkan kode verifikasi Google Search Console di dalam tanda kutip di bawah ini
-    googleSiteVerification = "" 
+    # --- VERIFIKASI GOOGLE (SUDAH DIPERBAIKI) ---
+    # Cukup masukkan kode hash uniknya saja. 
+    # (Saya sudah hapus awalan 'google-site-verification=' agar formatnya valid)
+    googleSiteVerification = "hS42OPdnna2aUl9vx_isuYUjZPj0auXP93pzDp2wqc0"
 
     # --- Pengaturan Umum ---
     DateFormat = "2 January 2006"
@@ -43,7 +50,7 @@ enableRobotsTXT = true  # Penting untuk SEO agar Google boleh meng-crawl website
         url = "https://www.linkedin.com/in/setya-hafit-pambudi-0b6327237/"
     [[params.socialIcons]]
         name = "email"
-        url = "mailto:setyahafitp@gmail.com" #
+        url = "mailto:email-anda@gmail.com" # JANGAN LUPA: Ganti dengan email asli Anda di sini
 
 # --- Konfigurasi Favicon (Ikon Tab Browser) ---
 [params.assets]
@@ -57,7 +64,7 @@ enableRobotsTXT = true  # Penting untuk SEO agar Google boleh meng-crawl website
 [outputs]
     home = ["HTML", "RSS", "JSON"]
 
-# --- Konfigurasi Menu Navigasi (Disederhanakan untuk Mobile) ---
+# --- Konfigurasi Menu Navigasi (Mobile Friendly) ---
 [menu]
     # 1. Menu About
     [[menu.main]]
@@ -66,25 +73,23 @@ enableRobotsTXT = true  # Penting untuk SEO agar Google boleh meng-crawl website
         url = "/about/"
         weight = 10
 
-    # 2. Menu Jurnal (Artikel Teknis)
+    # 2. Menu Jurnal
     [[menu.main]]
         identifier = "posts"
         name = "Jurnal"
         url = "/posts/"
         weight = 20
 
-    # 3. Menu Contact (Baru - Ala Teguh Aprianto)
+    # 3. Menu Contact (PGP)
     [[menu.main]]
         identifier = "contact"
         name = "Contact"
         url = "/contact/"
         weight = 30
 
-    # 4. Menu Search (Ikon Kaca Pembesar)
+    # 4. Menu Search
     [[menu.main]]
         identifier = "search"
         name = "Search"
         url = "/search/"
         weight = 40
-
-    # Menu Tags & Archives disembunyikan dari header agar mobile friendly
