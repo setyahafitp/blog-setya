@@ -1,3 +1,13 @@
+<style>
+    /* HACK: Menyembunyikan tulisan 'Powered by' & 'PaperMod' */
+    .footer span:nth-child(2) {
+        display: none !important;
+    }
+    /* Memastikan Copyright tetap muncul rapi */
+    .footer span:first-child {
+        display: block !important;
+    }
+</style>
 <div id="tsparticles" style="position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: -1;"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
