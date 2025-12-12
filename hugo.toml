@@ -1,49 +1,41 @@
 baseURL = 'https://setyahafit.space/'
 languageCode = 'id-id'
-title = 'Setya Hafit | Cybersecurity Consultant'
+title = 'Setya Hafit'  # <-- Cuma Nama Saja (Biar Rapi di HP)
 theme = 'PaperMod'
 enableRobotsTXT = true
 
 [params]
-    # --- PENGATURAN FOOTER (PENTING: Ditaruh paling atas) ---
     defaultTheme = "dark"
-    showFooterPoweredBy = false  # Ini mematikan tulisan "Powered by Hugo"
-    copyright = "© 2025 Setya Hafit | Securing the Digital Space"
-
+    
     # --- SEO Metadata ---
     author = "Setya Hafit"
-    description = "Portfolio Setya Hafit: Cybersecurity Analyst, DevSecOps, dan Network Security Specialist."
-    keywords = ["Setya Hafit", "Cybersecurity Indonesia", "Jasa Pentest", "DevSecOps", "Writeups", "CTF"]
+    description = "Jurnal belajar dan catatan sertifikasi Google Cybersecurity Setya Hafit."
+    keywords = ["Setya Hafit", "Cybersecurity", "Google Cybersecurity", "Blog", "Jurnal"]
     
-    # --- VERIFIKASI GOOGLE ---
+    # --- Verifikasi Google ---
     googleSiteVerification = "hS42OPdnna2aUl9vx_isuYUjZPj0auXP93pzDp2wqc0"
 
-    # --- Pengaturan Umum UI ---
-    DateFormat = "2 January 2006"
+    # --- Pengaturan UI ---
     ShowReadingTime = true
     ShowShareButtons = true
     ShowPostNavLinks = true
     ShowBreadCrumbs = true
     ShowCodeCopyButtons = true
+    
+    # Kita matikan footer bawaan tema di sini (tapi nanti kita timpa pakai file HTML biar yakin)
+    showFooterPoweredBy = false
+    copyright = "© 2025 Setya Hafit"
 
-# --- Konfigurasi Favicon (Ikon Tab Browser) ---
-[params.assets]
-    favicon = "me.jpg"
-    favicon16x16 = "me.jpg"
-    favicon32x32 = "me.jpg"
-    apple_touch_icon = "me.jpg"
-    safari_pinned_tab = "me.jpg"
-
-# --- Konfigurasi Profil Halaman Depan ---
+# --- Profil Halaman Depan ---
 [params.profileMode]
     enabled = true
     title = "Setya Hafit"
-    subtitle = "Cybersecurity Enthusiast | DevSecOps Learner"
+    # Subtitle yang lebih rendah hati & sesuai tujuan blog
+    subtitle = "Google Cybersecurity Certification Journey | Learning & Sharing"
     imageUrl = "me.jpg"
     imageWidth = 150
     imageHeight = 150
     
-    # Tombol Sosial Media
     [[params.socialIcons]]
         name = "github"
         url = "https://github.com/setyahafitp"
@@ -52,33 +44,34 @@ enableRobotsTXT = true
         url = "https://www.linkedin.com/in/setya-hafit-pambudi-0b6327237/"
     [[params.socialIcons]]
         name = "email"
-        # ⚠️ WAJIB GANTI: Hapus 'email-anda' dan tulis email asli Anda di sini
-        url = "mailto:setya@gmail.com" 
+        url = "mailto:setya@gmail.com" # Ganti email asli
 
-# --- Pengaturan Output untuk Search ---
+[params.assets]
+    favicon = "me.jpg"
+    favicon16x16 = "me.jpg"
+    favicon32x32 = "me.jpg"
+    apple_touch_icon = "me.jpg"
+    safari_pinned_tab = "me.jpg"
+
 [outputs]
     home = ["HTML", "RSS", "JSON"]
 
-# --- Konfigurasi Menu Navigasi ---
 [menu]
     [[menu.main]]
         identifier = "about"
         name = "About"
         url = "/about/"
         weight = 10
-
     [[menu.main]]
         identifier = "posts"
         name = "Jurnal"
         url = "/posts/"
         weight = 20
-
     [[menu.main]]
         identifier = "contact"
         name = "Contact"
         url = "/contact/"
         weight = 30
-
     [[menu.main]]
         identifier = "search"
         name = "Search"
