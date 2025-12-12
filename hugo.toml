@@ -5,11 +5,9 @@ theme = 'PaperMod'
 enableRobotsTXT = true
 
 [params]
-    # --- Tampilan & Warna ---
-    defaultTheme = "dark" 
-    
-    # --- Footer Profesional (White Labeling) ---
-    showFooterPoweredBy = false
+    # --- PENGATURAN FOOTER (PENTING: Ditaruh paling atas) ---
+    defaultTheme = "dark"
+    showFooterPoweredBy = false  # Ini mematikan tulisan "Powered by Hugo"
     copyright = "© 2025 Setya Hafit | Securing the Digital Space"
 
     # --- SEO Metadata ---
@@ -17,17 +15,24 @@ enableRobotsTXT = true
     description = "Portfolio Setya Hafit: Cybersecurity Analyst, DevSecOps, dan Network Security Specialist."
     keywords = ["Setya Hafit", "Cybersecurity Indonesia", "Jasa Pentest", "DevSecOps", "Writeups", "CTF"]
     
-    # --- VERIFIKASI GOOGLE (SUDAH DIPERBAIKI) ---
-    # Hanya masukkan kode uniknya saja (tanpa <meta> dan tanpa google-site-verification=)
+    # --- VERIFIKASI GOOGLE ---
     googleSiteVerification = "hS42OPdnna2aUl9vx_isuYUjZPj0auXP93pzDp2wqc0"
 
-    # --- Pengaturan Umum ---
+    # --- Pengaturan Umum UI ---
     DateFormat = "2 January 2006"
     ShowReadingTime = true
     ShowShareButtons = true
     ShowPostNavLinks = true
     ShowBreadCrumbs = true
     ShowCodeCopyButtons = true
+
+# --- Konfigurasi Favicon (Ikon Tab Browser) ---
+[params.assets]
+    favicon = "me.jpg"
+    favicon16x16 = "me.jpg"
+    favicon32x32 = "me.jpg"
+    apple_touch_icon = "me.jpg"
+    safari_pinned_tab = "me.jpg"
 
 # --- Konfigurasi Profil Halaman Depan ---
 [params.profileMode]
@@ -47,15 +52,8 @@ enableRobotsTXT = true
         url = "https://www.linkedin.com/in/setya-hafit-pambudi-0b6327237/"
     [[params.socialIcons]]
         name = "email"
-        url = "mailto:email-anda@gmail.com" # GANTI dengan email asli Anda (misal: setya@gmail.com)
-
-# --- Konfigurasi Favicon (Ikon Tab Browser) ---
-[params.assets]
-    favicon = "me.jpg"
-    favicon16x16 = "me.jpg"
-    favicon32x32 = "me.jpg"
-    apple_touch_icon = "me.jpg"
-    safari_pinned_tab = "me.jpg"
+        # ⚠️ WAJIB GANTI: Hapus 'email-anda' dan tulis email asli Anda di sini
+        url = "mailto:setya@gmail.com" 
 
 # --- Pengaturan Output untuk Search ---
 [outputs]
