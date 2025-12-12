@@ -3,7 +3,7 @@ name: Deploy to Hostinger
 on:
   push:
     branches:
-      - main  # Trigger otomatis setiap ada update di branch main
+      - main
 
 jobs:
   deploy:
@@ -12,7 +12,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          submodules: true  # Wajib true karena kita pakai theme PaperMod
+          submodules: true
           fetch-depth: 0
 
       - name: Setup Hugo
@@ -30,7 +30,10 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./public/    # Folder hasil build Hugo
-          server-dir: ./          # Upload langsung ke root FTP (karena akun FTP sudah diarahkan ke public_html)
-          protocol: ftps          # Enkripsi agar aman
-          strict: false           # Mencegah error sertifikat SSL di shared hosting
+          local-dir: ./public/
+          server-dir: ./
+          
+          # --- PERUBAHAN PENTING DI SINI ---
+          protocol: ftp            # Kita ganti ke FTP biasa (lebih ringan & stabil)
+          port: 21                 # Port standar FTP
+          timeout: 300000          # Waktu tunggu diperpanjang jadi 5 menit (300.000 ms)
