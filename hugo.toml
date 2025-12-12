@@ -2,16 +2,14 @@ baseURL = 'https://setyahafit.space/'
 languageCode = 'id-id'
 title = 'Setya Hafit | Cybersecurity Consultant'
 theme = 'PaperMod'
-enableRobotsTXT = true  # Agar Google boleh meng-crawl website
+enableRobotsTXT = true
 
 [params]
     # --- Tampilan & Warna ---
     defaultTheme = "dark" 
     
     # --- Footer Profesional (White Labeling) ---
-    # Mematikan tulisan "Powered by Hugo" agar terlihat pro
     showFooterPoweredBy = false
-    # Copyright custom ala konsultan
     copyright = "© 2025 Setya Hafit | Securing the Digital Space"
 
     # --- SEO Metadata ---
@@ -20,8 +18,7 @@ enableRobotsTXT = true  # Agar Google boleh meng-crawl website
     keywords = ["Setya Hafit", "Cybersecurity Indonesia", "Jasa Pentest", "DevSecOps", "Writeups", "CTF"]
     
     # --- VERIFIKASI GOOGLE (SUDAH DIPERBAIKI) ---
-    # Cukup masukkan kode hash uniknya saja. 
-    # (Saya sudah hapus awalan 'google-site-verification=' agar formatnya valid)
+    # Hanya masukkan kode uniknya saja (tanpa <meta> dan tanpa google-site-verification=)
     googleSiteVerification = "hS42OPdnna2aUl9vx_isuYUjZPj0auXP93pzDp2wqc0"
 
     # --- Pengaturan Umum ---
@@ -30,7 +27,7 @@ enableRobotsTXT = true  # Agar Google boleh meng-crawl website
     ShowShareButtons = true
     ShowPostNavLinks = true
     ShowBreadCrumbs = true
-    ShowCodeCopyButtons = true # Tombol copy di kotak kodingan
+    ShowCodeCopyButtons = true
 
 # --- Konfigurasi Profil Halaman Depan ---
 [params.profileMode]
@@ -50,7 +47,7 @@ enableRobotsTXT = true  # Agar Google boleh meng-crawl website
         url = "https://www.linkedin.com/in/setya-hafit-pambudi-0b6327237/"
     [[params.socialIcons]]
         name = "email"
-        url = "mailto:email-anda@gmail.com" # JANGAN LUPA: Ganti dengan email asli Anda di sini
+        url = "mailto:email-anda@gmail.com" # GANTI dengan email asli Anda (misal: setya@gmail.com)
 
 # --- Konfigurasi Favicon (Ikon Tab Browser) ---
 [params.assets]
@@ -64,30 +61,26 @@ enableRobotsTXT = true  # Agar Google boleh meng-crawl website
 [outputs]
     home = ["HTML", "RSS", "JSON"]
 
-# --- Konfigurasi Menu Navigasi (Mobile Friendly) ---
+# --- Konfigurasi Menu Navigasi ---
 [menu]
-    # 1. Menu About
     [[menu.main]]
         identifier = "about"
         name = "About"
         url = "/about/"
         weight = 10
 
-    # 2. Menu Jurnal
     [[menu.main]]
         identifier = "posts"
         name = "Jurnal"
         url = "/posts/"
         weight = 20
 
-    # 3. Menu Contact (PGP)
     [[menu.main]]
         identifier = "contact"
         name = "Contact"
         url = "/contact/"
         weight = 30
 
-    # 4. Menu Search
     [[menu.main]]
         identifier = "search"
         name = "Search"
