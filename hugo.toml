@@ -68,6 +68,11 @@ enableRobotsTXT = true
         url = "/posts/"
         weight = 20
     [[menu.main]]
+        identifier = "credentials"
+        name = "Credentials"
+        url = "/credentials/"
+        weight = 25  # Angka 25 agar posisinya pas di tengah    
+    [[menu.main]]
         identifier = "contact"
         name = "Contact"
         url = "/contact/"
