@@ -1,68 +1,90 @@
 baseURL = 'https://setyahafit.space/'
 languageCode = 'id-id'
-title = 'Setya Hafit | Cybersecurity'
+title = 'Setya Hafit | Cybersecurity Consultant'
 theme = 'PaperMod'
+enableRobotsTXT = true  # Penting untuk SEO agar Google boleh meng-crawl website
 
 [params]
-    defaultTheme = "dark" # Default mode gelap (khas hacker/dev)
-    description = "Portfolio dan Jurnal Cybersecurity Setya Hafit"
+    # --- Tampilan & Warna ---
+    defaultTheme = "dark" # Default gelap (Hacker style)
+    # disableThemeToggle = true # Hapus tanda pagar jika ingin memaksa user selalu di dark mode
 
-[menu]
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 10
-  [[menu.main]]
-    identifier = "posts"
-    name = "Jurnal"
-    url = "/posts/"
-    weight = 20
+    # --- SEO Metadata (Agar muncul di Google) ---
+    author = "Setya Hafit"
+    description = "Portfolio Setya Hafit: Cybersecurity Analyst, DevSecOps, dan Network Security Specialist."
+    keywords = ["Setya Hafit", "Cybersecurity Indonesia", "Jasa Pentest", "DevSecOps", "Writeups", "CTF"]
+    
+    # Masukkan kode verifikasi Google Search Console di dalam tanda kutip di bawah ini
+    googleSiteVerification = "" 
+
+    # --- Pengaturan Umum ---
+    DateFormat = "2 January 2006"
+    ShowReadingTime = true
+    ShowShareButtons = true
+    ShowPostNavLinks = true
+    ShowBreadCrumbs = true
+    ShowCodeCopyButtons = true # Tombol copy di kotak kodingan
 
 # --- Konfigurasi Profil Halaman Depan ---
 [params.profileMode]
     enabled = true
     title = "Setya Hafit"
     subtitle = "Cybersecurity Enthusiast | DevSecOps Learner"
-    imageUrl = "me.jpg"       # Ini otomatis mengambil dari folder static
+    imageUrl = "me.jpg"
     imageWidth = 150
     imageHeight = 150
     
-    # Tombol Sosial Media (Bisa diedit nanti)
+    # Tombol Sosial Media
     [[params.socialIcons]]
         name = "github"
         url = "https://github.com/setyahafitp"
     [[params.socialIcons]]
         name = "linkedin"
         url = "https://www.linkedin.com/in/setya-hafit-pambudi-0b6327237/"
+    [[params.socialIcons]]
+        name = "email"
+        url = "mailto:email-anda@gmail.com" # Ganti dengan email asli
 
-# --- Pengaturan Output untuk Search ---
-[outputs]
-    home = ["HTML", "RSS", "JSON"] # JSON wajib ada untuk fitur Search
-
-# --- Konfigurasi Menu Navigasi ---
-[[menu.main]]
-    identifier = "archives"
-    name = "Archive"
-    url = "/archives/"
-    weight = 10
-
-[[menu.main]]
-    identifier = "search"
-    name = "Search"
-    url = "/search/"
-    weight = 20
-
-[[menu.main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags/"
-    weight = 30
-
-    # --- Konfigurasi Favicon (Icon Tab Browser) ---
+# --- Konfigurasi Favicon (Ikon Tab Browser) ---
 [params.assets]
     favicon = "me.jpg"
     favicon16x16 = "me.jpg"
     favicon32x32 = "me.jpg"
     apple_touch_icon = "me.jpg"
     safari_pinned_tab = "me.jpg"
+
+# --- Pengaturan Output untuk Search ---
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+
+# --- Konfigurasi Menu Navigasi (Disederhanakan untuk Mobile) ---
+[menu]
+    # 1. Menu About
+    [[menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about/"
+        weight = 10
+
+    # 2. Menu Jurnal (Artikel Teknis)
+    [[menu.main]]
+        identifier = "posts"
+        name = "Jurnal"
+        url = "/posts/"
+        weight = 20
+
+    # 3. Menu Contact (Baru - Ala Teguh Aprianto)
+    [[menu.main]]
+        identifier = "contact"
+        name = "Contact"
+        url = "/contact/"
+        weight = 30
+
+    # 4. Menu Search (Ikon Kaca Pembesar)
+    [[menu.main]]
+        identifier = "search"
+        name = "Search"
+        url = "/search/"
+        weight = 40
+
+    # Menu Tags & Archives disembunyikan dari header agar mobile friendly

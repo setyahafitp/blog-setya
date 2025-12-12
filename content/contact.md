@@ -1,0 +1,69 @@
+---
+title: "Contact"
+layout: "contact" # Agar lebar penuh jika tema mendukung, atau biarkan default
+summary: "Hubungi Setya Hafit secara aman menggunakan PGP."
+draft: false
+---
+
+Untuk kebutuhan bisnis, kerjasama, atau diskusi *cybersecurity*, silakan hubungi saya melalui email:
+
+📧 **email-anda@gmail.com** (Ganti dengan email asli)
+
+---
+
+### Secure Communication (PGP Key)
+
+Jika Anda ingin mengirimkan informasi rahasia (*confidential*), gunakan PGP Key di bawah ini untuk mengenkripsi pesan Anda.
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+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
+5YE=
+=4EVi
+-----END PGP PUBLIC KEY BLOCK-----
