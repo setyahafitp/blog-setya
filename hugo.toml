@@ -43,7 +43,7 @@ enableRobotsTXT = true  # Penting untuk SEO agar Google boleh meng-crawl website
         url = "https://www.linkedin.com/in/setya-hafit-pambudi-0b6327237/"
     [[params.socialIcons]]
         name = "email"
-        url = "mailto:email-anda@gmail.com" # Ganti dengan email asli
+        url = "mailto:setyahafitp@gmail.com" #
 
 # --- Konfigurasi Favicon (Ikon Tab Browser) ---
 [params.assets]

@@ -7,7 +7,7 @@ draft: false
 
 Untuk kebutuhan bisnis, kerjasama, atau diskusi *cybersecurity*, silakan hubungi saya melalui email:
 
-📧 **email-anda@gmail.com** (Ganti dengan email asli)
+📧 **setyahafitp@gmail.com**
 
 ---
 
