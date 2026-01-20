@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Setya Hafit | Cybersecurity</title>
+    <title>Posts on Setya Hafit</title>
     <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on Setya Hafit | Cybersecurity</description>
+    <description>Recent content in Posts on Setya Hafit</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>id-id</language>
-    <lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Jan 2026 23:15:00 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Membedah SQL Injection: Ancaman Klasik yang Masih Mematikan</title>
+      <link>http://localhost:1313/posts/membedah-sql-injection/</link>
+      <pubDate>Tue, 20 Jan 2026 23:15:00 +0700</pubDate>
+      <guid>http://localhost:1313/posts/membedah-sql-injection/</guid>
+      <description>Catatan mendalam saya tentang SQL Injection (SQLi). Bagaimana sebuah input sederhana bisa memanipulasi database backend, dan kenapa &amp;lsquo;Prepared Statements&amp;rsquo; adalah penyelamat.</description>
+    </item>
     <item>
       <title>Belajar Basic Network Scanning dengan Nmap</title>
       <link>http://localhost:1313/posts/belajar-nmap/</link>

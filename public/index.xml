@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Setya Hafit | Cybersecurity</title>
+    <title>Setya Hafit</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Setya Hafit | Cybersecurity</description>
+    <description>Recent content on Setya Hafit</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>id-id</language>
-    <lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Jan 2026 23:15:00 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Membedah SQL Injection: Ancaman Klasik yang Masih Mematikan</title>
+      <link>http://localhost:1313/posts/membedah-sql-injection/</link>
+      <pubDate>Tue, 20 Jan 2026 23:15:00 +0700</pubDate>
+      <guid>http://localhost:1313/posts/membedah-sql-injection/</guid>
+      <description>Catatan mendalam saya tentang SQL Injection (SQLi). Bagaimana sebuah input sederhana bisa memanipulasi database backend, dan kenapa &amp;lsquo;Prepared Statements&amp;rsquo; adalah penyelamat.</description>
+    </item>
     <item>
       <title>About Me</title>
       <link>http://localhost:1313/about/</link>
@@ -34,6 +41,20 @@ Blog ini mendokumentasikan perjalanan belajar saya, jurnal harian saya, dan eksp
 &lt;p&gt;Untuk melakukan scan cepat ke target, kita bisa gunakan perintah ini di terminal:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nmap -sC -sV 192.168.1.1
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>Hubungi Setya Hafit secara aman menggunakan PGP.</description>
+    </item>
+    <item>
+      <title>Credentials</title>
+      <link>http://localhost:1313/credentials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/credentials/</guid>
+      <description>Professional certifications and technical competencies.</description>
     </item>
   </channel>
 </rss>
