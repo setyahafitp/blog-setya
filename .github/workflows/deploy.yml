@@ -32,8 +32,6 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./public/
           server-dir: ./
-          
-          # --- PERUBAHAN PENTING DI SINI ---
-          protocol: ftp            # Kita ganti ke FTP biasa (lebih ringan & stabil)
-          port: 21                 # Port standar FTP
-          timeout: 300000          # Waktu tunggu diperpanjang jadi 5 menit (300.000 ms)
+          protocol: ftp
+          port: 21
+          timeout: 300000
