@@ -1,4 +1,4 @@
-name: Production Build
+name: Deploy Final
 
 on:
   push:
@@ -33,5 +33,3 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./public/
           server-dir: ./
-          protocol: ftp
-          port: 21
