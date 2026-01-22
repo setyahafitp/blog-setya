@@ -1,6 +1,6 @@
 ---
 title: "Membedah SQL Injection: Ancaman Klasik yang Masih Mematikan"
-date: 2026-01-20T23:15:00+07:00
+date: 2024-01-20T23:15:00+07:00
 draft: false
 summary: "Catatan mendalam saya tentang SQL Injection (SQLi). Bagaimana sebuah input sederhana bisa memanipulasi database backend, dan kenapa 'Prepared Statements' adalah penyelamat."
 tags: ["Web Security", "SQL Injection", "OWASP Top 10", "Hacking", "Defense"]
