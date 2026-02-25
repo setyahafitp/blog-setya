@@ -22,3 +22,22 @@
         margin: 10px 20px !important;
     }
 }
+/* Paksa Menu Jadi Vertikal di Mobile */
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-wrap: wrap; /* Biar menu bisa turun ke bawah */
+    }
+    .menu {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100%;
+        margin-top: 10px;
+        background: rgba(0, 0, 0, 0.9); /* Biar ada kontras saat menu turun */
+        padding: 10px;
+        border-radius: 8px;
+    }
+    .menu li {
+        margin: 8px 0 !important;
+        border-bottom: 1px solid #333; /* Garis pemisah antar menu */
+    }
+}
