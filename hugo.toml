@@ -1,10 +1,11 @@
 baseURL = 'https://setyahafit.space/'
 languageCode = 'id-id'
-title = 'Setya Hafit'  # <-- Cuma Nama Saja (Biar Rapi di HP)
+title = 'Setya Hafit'
 theme = 'PaperMod'
 enableRobotsTXT = true
 
 [params]
+    env = "production"
     defaultTheme = "dark"
     
     # --- SEO Metadata ---
@@ -15,14 +16,16 @@ enableRobotsTXT = true
     # --- Verifikasi Google ---
     googleSiteVerification = "hS42OPdnna2aUl9vx_isuYUjZPj0auXP93pzDp2wqc0"
 
-    # --- Pengaturan UI ---
+    # --- Pengaturan UI Mobile & Responsif ---
     ShowReadingTime = true
     ShowShareButtons = true
     ShowPostNavLinks = true
     ShowBreadCrumbs = true
     ShowCodeCopyButtons = true
+    ShowScrollToTop = true          # Sangat membantu user mobile
+    ShowMenuBehindItem = true       # Agar menu mobile tidak berantakan
     
-    # Kita matikan footer bawaan tema di sini (tapi nanti kita timpa pakai file HTML biar yakin)
+    # --- Footer ---
     showFooterPoweredBy = false
     copyright = "© 2025 Setya Hafit"
 
@@ -30,7 +33,6 @@ enableRobotsTXT = true
 [params.profileMode]
     enabled = true
     title = "Setya Hafit"
-    # Subtitle yang lebih rendah hati & sesuai tujuan blog
     subtitle = "Google Cybersecurity Certification Journey | Learning & Sharing"
     imageUrl = "me.jpg"
     imageWidth = 150
@@ -44,7 +46,7 @@ enableRobotsTXT = true
         url = "https://www.linkedin.com/in/setya-hafit-pambudi-0b6327237/"
     [[params.socialIcons]]
         name = "email"
-        url = "mailto:setya@gmail.com" # Ganti email asli
+        url = "mailto:setya@gmail.com"
 
 [params.assets]
     favicon = "me.jpg"
@@ -56,6 +58,7 @@ enableRobotsTXT = true
 [outputs]
     home = ["HTML", "RSS", "JSON"]
 
+# --- Pengaturan Menu (Navigasi) ---
 [menu]
     [[menu.main]]
         identifier = "about"
@@ -71,7 +74,7 @@ enableRobotsTXT = true
         identifier = "credentials"
         name = "Credentials"
         url = "/credentials/"
-        weight = 25  # Angka 25 agar posisinya pas di tengah    
+        weight = 25
     [[menu.main]]
         identifier = "contact"
         name = "Contact"
