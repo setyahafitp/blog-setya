@@ -1,0 +1,24 @@
+/* Perbaikan Navbar Mobile */
+@media screen and (max-width: 768px) {
+    .menu {
+        background: var(--theme);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        padding: 10px 0;
+        border-bottom: 1px solid var(--border);
+        display: none; /* Sembunyikan secara default */
+    }
+    
+    /* Munculkan menu saat tombol diklik (mekanisme bawaan PaperMod) */
+    .menu.active {
+        display: flex;
+    }
+
+    /* Memperjelas jarak antar menu di HP */
+    .menu li {
+        margin: 10px 20px !important;
+    }
+}
